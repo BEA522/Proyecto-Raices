@@ -1,0 +1,39 @@
+/*
+    font-family: "DM Sans", sans-serif;
+*/
+
+
+.acoordion-button:not(.collapsed) {
+    background-color: rosybrown;
+    color: black;
+    font-weight: 900;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: brown;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #ccc;
+    color: #333;
+    clear: both;
+    padding: 3em 0;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+}
