@@ -33,17 +33,17 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 
-app.get('/',function (req,res) {
+app.get('/', function (req,res) {
   var conocido = Boolean(req.session.nombre);
 
   res.render('index', {
     title:'sesiones en Express.js',
     conocido: conocido,
-    nombre: req.session.nombre     
+    nombre: req.session.nombre 
   })
 });
 
-var nombre = res.body.nombre;
+//var nombre = res.body.nombre;
 
 app.post('/ingresar', function (req, res) {
   if (req.body.nombre) {
@@ -74,3 +74,4 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+

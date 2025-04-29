@@ -6,6 +6,10 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
+    "@ng-bootstrap/ng-bootstrap": "^18.0.0",
+    "axios": "^1.9.0",
+    "bootstrap": "^5.3.5",
+    "bootstrapp": "^0.0.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
@@ -13,6 +17,7 @@
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "react-bootstrap": "^2.10.9"
   }
 }
