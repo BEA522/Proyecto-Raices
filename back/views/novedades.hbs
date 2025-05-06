@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligth fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src='/images/LOGO.jpg' width="100" height="60" class='rounded-logo' alt="Logo" />RAICES
+                ARGENTINAS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/tradicion">Tradicion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/novedades">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacto">contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.google.com.ar/?hl=es-419">Google</a></li>
+
+                </ul>
+
+                <form class="d-flex mt-3 ms-3" role="search" action="/novedades" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Search" name="query"
+                        aria-label="Search" />
+                    <button className="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        {{{body}}}
+    </div>
+
+<div class="holder">
+    <h2>NOVEDADES</h2>
+    <div class="card" style="width: 18rem;">
+        <img src="/images/LOGO.jpg" class="card-img-top" alt="Logo">
+        <div class="card-body">
+            <p class="card-text">NUEVO INGRESO.!!</p>
+        </div>
+    </div>
+</div>
+
+<main class="holder">
+    <div class="novedades">
+        <div class="novedades">
+            <br>
+            <h2>Bombillas</h2>
+            <h2>Varios Modelos!!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut iusto perferendis porro corrupti
+                recusandae ea tenetur impedit inventore sunt excepturi expedita odit adipisci, deleniti doloribus
+                nobis
+                labore necessitatibus quasi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque ex temporibus nulla,
+                praesentium
+                velit libero incidunt error accusantium laudantium omnis fugit assumenda amet asperiores sequi! Sit
+                dignissimos vitae voluptas.
+            </p>
+
+        </div>
+        <div class="novedades">
+            <h2>Mates</h2>
+            <h2> Nuevo Diseño!!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut iusto perferendis porro corrupti
+                recusandae ea tenetur impedit inventore sunt excepturi expedita odit adipisci, deleniti doloribus
+                nobis
+                labore necessitatibus quasi!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque ex temporibus nulla,
+                praesentium
+                velit libero incidunt error accusantium laudantium omnis fugit assumenda amet asperiores sequi! Sit
+                dignissimos vitae voluptas.
+            </p>
+
+        </div>
+</main>
+
+    <footer class="mt-5 text-center">
+        <h2>Derechos Reservados. Raices Argentinas</h2>
+    </footer>
+</body>

@@ -8,7 +8,6 @@ import NavBar from "./components/layout/Nav";
 import Main from "./components/layout/Main";
 import Footer from "./components/layout/Footer";
 
-
 import HomePage from "./pages/HomePage";
 import TradicionPage from "./pages/TradicionPage";
 import GaleriaPage from "./pages/GaleriaPage";

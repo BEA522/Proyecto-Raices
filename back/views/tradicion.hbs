@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-ligth fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src='/images/LOGO.jpg' width="100" height="60" class='rounded-logo' alt="Logo" />RAICES
+                ARGENTINAS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/tradicion">Tradicion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/novedades">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacto">contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.google.com.ar/?hl=es-419">Google</a></li>
+
+                </ul>
+
+                <form class="d-flex mt-3 ms-3" role="search" action="/novedades" method="get">
+                    <input class="form-control me-2" type="search" placeholder="Search" name="query"
+                        aria-label="Search" />
+                    <button className="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        {{{body}}}
+    </div>
+
+    <main>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title"> Tradición</h2>
+                <p>
+                    La tradición del mate es mucho más que una simple bebida; es un símbolo de amistad, calidez y
+                    conexión entre las personas. En cada ronda de mate se encienden conversaciones, se comparten risas y
+                    se forjan lazos que trascienden el tiempo. A través de estas imágenes, queremos capturar la esencia
+                    de estos momentos especiales, donde el mate se convierte en el centro de un ritual que une a amigos
+                    y familiares. Te invitamos a sumergirte en esta celebración de la cultura argentina y a sentir la
+                    calidez de cada encuentro. ¡Bienvenido a nuestra expresión visual de amor y compañerismo a través
+                    del mate!
+                </p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/images/mate gaucho.jpg" class="card-img-top" alt="Gaucho mateando">
+                    <div class="card-body">
+                        <h3 class="card-title">El Mate Gaucho</h3>
+                        <p class="card-text">En la soledad de su hogar en el campo, el gaucho encuentra en el mate un
+                            compañero silencioso y fiel. Cada sorbo lo conecta con la tierra que cuida y con las
+                            tradiciones que nutren su alma. En este momento de calma, rodeado de la vastedad de la
+                            naturaleza, el mate se convierte en un ritual sagrado que invita a la reflexión, donde el
+                            tiempo parece detenerse y la conexión con sus raíces se fortalece.</p>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/images/mate sombrero.jpg" class="card-img-top" alt="Chica con un mate">
+                    <div class="card-body">
+                        <h3 class="card-title">El Mate Viajero</h3>
+                        <p class="card-text">Con el sombrero desplegando su encanto, esta viajera se detiene a
+                            contemplar un paisaje que roba el aliento. En su brazo, el mate y el termo son más que
+                            accesorios; son símbolos de la aventura y la conexión con la cultura que lleva en su
+                            corazón. En este instante de pausa, rodeada de la belleza de la naturaleza, el ritual del
+                            mate se convierte en un momento de reflexión y gratitud, recordándole que cada viaje es
+                            también una oportunidad para saborear la esencia de la vida.</p>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/images/Mateando.jpg" class="card-img-top" alt="Amigos mateando" width="200">
+                    <div class="card-body">
+                        <h3 class="card-title">El Mate Compartido</h3>
+                        <p class="card-text">Bajo el cálido abrazo del sol, un grupo de amigos se reúne en el pasto para
+                            disfrutar de una tarde llena de risas y charlas. El mate fluye de mano en mano, simbolizando
+                            la amistad y la conexión que une a cada uno de ellos. En esos momentos sencillos, se crean
+                            recuerdos imborrables, donde cada sorbo acompaña historias y sueños compartidos. Aquí, en la
+                            simplicidad de estar juntos, el mate se convierte en el vínculo que fortalece lazos y
+                            celebra la belleza de la camaradería.</p>
+                    </div>
+                    <div class="card-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="http://localhost:3000/admin/login" class="btn btn-primary">Pagina Principal </a>
+
+        </div>
+    </main>
