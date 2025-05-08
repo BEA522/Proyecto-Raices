@@ -1,51 +1,36 @@
-import React from 'react';
-import { Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-//import './path/to/your/css/file.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/NovedadItem';
 import "../styles/novedades.css";
 
-const NovedadesPage = () => {
+const NovedadesPage = (props) => {
+
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+
+        cargarNovedades();
+    }, []);
+
     return (
-        <div>
-            <Navbar bg="light" expand="lg" fixed="top">
-                <div className="container-fluid">
-                    <Navbar.Brand as={Link} to="/">RAICES ARGENTINAS</Navbar.Brand>
-                </div>
-            </Navbar>
-
-
-            <main className="holder">
-                <div className="novedades">
-                    <h2>Bombillas</h2>
-                    <h2>Varios Modelos!!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut iusto perferendis porro corrupti
-                        recusandae ea tenetur impedit inventore sunt excepturi expedita odit adipisci, deleniti doloribus
-                        nobis
-                        labore necessitatibus quasi!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque ex temporibus nulla,
-                        praesentium
-                        velit libero incidunt error accusantium laudantium omnis fugit assumenda amet asperiores sequi! Sit
-                        dignissimos vitae voluptas.
-                    </p>
-
-                </div>
-                <div class="novedades">
-                    <h2>Mates</h2>
-                    <h2> Nuevo Diseño!!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit ut iusto perferendis porro corrupti
-                        recusandae ea tenetur impedit inventore sunt excepturi expedita odit adipisci, deleniti doloribus
-                        nobis
-                        labore necessitatibus quasi!
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque ex temporibus nulla,
-                        praesentium
-                        velit libero incidunt error accusantium laudantium omnis fugit assumenda amet asperiores sequi! Sit
-                        dignissimos vitae voluptas.
-                    </p>
-                </div>
-            </main >
-            <footer> Diseñado por Beatriz Gigena</footer>
-        </div>
-    )
+        <section className='holder'>
+            <h2>Novedades</h2>
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                    title={item.titulo} subtitle={item.subtitletitulo}
+                    imagen={item.imagen} body={item.cuerpo} />)
+            )}
+        </section>
+    );
 }
 
 export default NovedadesPage;
