@@ -16,24 +16,27 @@ const ContactoPage = () => {
             <main class="holder contacto">
                 <div>
                     <h2>Contáctanos</h2>
-                    <form action="" method="" class="formulario">
+                    <form action="https://formsubmit.co/raices.argentinas.cba@gmail.com " method="POST" class="formulario">
                         <p>
                             <label for="name">Nombre</label>
-                            <input type="text" name="" />
+                            <input type="text" name="nombre" />
                         </p>
                         <p>
                             <label for="email">Email</label>
-                            <input type="text" name="" />
+                            <input type="text" name="email" />
                         </p>
                         <p>
                             <label for="telefono">Teléfono</label>
-                            <input type="text" name="" />
+                            <input type="text" name="telefono" />
                         </p>
                         <p>
                             <label for="mensaje">Mensaje</label>
-                            <textarea name=""></textarea>
+                            <textarea name="mensaje"></textarea>
                         </p>
                         <p class="acciones"><input type="submit" value="Enviar" /></p>
+
+                        <input type="hidden" name='_next' value="http://localhost:3000/Contacto" />
+                        <input type="hidden" name='_captcha' value="false" />
                     </form>
                 </div>
                 <div class="datos">
