@@ -16,7 +16,7 @@ const ContactoPage = () => {
             <main class="holder contacto">
                 <div>
                     <h2>Contáctanos</h2>
-                    <form action="https://formsubmit.co/raices.argentinas.cba@gmail.com " method="POST" class="formulario">
+                    <form action="https://formsubmit.co/bea.loforte@gmail.com" método="POST" method="POST" class="formulario">
                         <p>
                             <label for="name">Nombre</label>
                             <input type="text" name="nombre" />
