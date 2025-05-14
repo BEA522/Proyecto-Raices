@@ -6,6 +6,8 @@ var logger = require('morgan');
 var cors = require('cors');
 
 require('dotenv').config();
+console.log(process.env.CLOUDINARY_URL)
+
 var session = require('express-session');
 
 const fileUpload = require('express-fileupload');
@@ -55,7 +57,7 @@ secured = async (req, res, next) => {
 
 app.use(fileUpload({
   useTempFiles: true,
-  tempFileDir: '/tmp'
+  tempFileDir: '/tmp/'
 }));
 
 

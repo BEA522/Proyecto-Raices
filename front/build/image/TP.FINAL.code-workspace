@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../TP.FINAL"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../T.P-FINAL-FULLSTACK"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "TP.FINAL"
+	}
+}

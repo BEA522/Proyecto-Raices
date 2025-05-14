@@ -1,5 +1,5 @@
 var mysql = require('mysql2');
-var util = require ('util');
+var { promisify } = require ('util');
 require('dotenv').config();
 
 var pool =mysql.createPool({
@@ -12,7 +12,7 @@ var pool =mysql.createPool({
 
 
 
-pool.query = util.promisify(pool.query);
+pool.query = promisify(pool.query);
 
 module.exports = pool;
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 //import './path/to/your/css/file.css';
-import "../styles/galeria.css";
+import "../styles/layout.css";
 
 const GaleriaPage = () => {
     return (
