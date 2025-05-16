@@ -1,45 +1,41 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-//import './path/to/your/css/file.css';
+//import Header from '../components/layout/Header';
 import "../styles/layout.css";
 
 const ContactoPage = () => {
     return (
-        <div>
-            <Navbar bg="light" expand="lg" fixed="top">
-                <div className="container-fluid">
-                    <Navbar.Brand as={Link} to="/">RAICES ARGENTINAS</Navbar.Brand>
-                </div>
-            </Navbar>
+        <div style={{ paddingTop: '100px' }}>
 
-            <main class="holder contacto">
-                <div>
+            <main className="holder contacto">
+                <div className='mb-4'>
                     <h2>Contáctanos</h2>
-                    <form action="https://formsubmit.co/bea.loforte@gmail.com" método="POST" method="POST" class="formulario">
+                    <form action="https://formsubmit.co/raices.argentinas.cba@gmail.com" method="POST" className="formulario">
                         <p>
-                            <label for="name">Nombre</label>
-                            <input type="text" name="nombre" />
+                            <label htmlFor="name">Nombre</label>
+                            <input type="text" id='name' name="nombre" />
                         </p>
                         <p>
-                            <label for="email">Email</label>
-                            <input type="text" name="email" />
+                            <label htmlFor="email">Email</label>
+                            <input type="text" id='email' name="email" />
                         </p>
                         <p>
-                            <label for="telefono">Teléfono</label>
-                            <input type="text" name="telefono" />
+                            <label htmlFor="telefono">Teléfono</label>
+                            <input type="text" id='telefono' name="telefono" />
                         </p>
                         <p>
-                            <label for="mensaje">Mensaje</label>
-                            <textarea name="mensaje"></textarea>
+                            <label htmlFor="mensaje">Mensaje</label>
+                            <textarea id='mensaje' name="mensaje"></textarea>
                         </p>
-                        <p class="acciones"><input type="submit" value="Enviar" /></p>
+
+                        <p className="acciones">
+                            <input type="submit" value="Enviar" />
+                        </p>
 
                         <input type="hidden" name='_next' value="http://localhost:3000/Contacto" />
                         <input type="hidden" name='_captcha' value="false" />
                     </form>
                 </div>
-                <div class="datos">
+                <div className="datos">
                     <h2>Otras vias de comunicación</h2>
                     <p> <strong>También puede contactarse con nosotros usando los siguientes medios</strong></p>
                     <ul>
@@ -50,10 +46,9 @@ const ContactoPage = () => {
 
             </main>
 
-            <footer> Diseñado por Beatriz Gigena</footer>
 
         </div>
-    )
-}
+    );
+};
 
 export default ContactoPage;

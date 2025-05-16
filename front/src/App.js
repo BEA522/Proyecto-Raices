@@ -4,7 +4,7 @@ import './App.css';
 import './styles/layout.css';
 
 import Header from "./components/layout/Header";
-import NavBar from "./components/layout/Nav";
+//import NavBar from "./components/layout/Nav";
 import Main from "./components/layout/Main";
 import Footer from "./components/layout/Footer";
 
@@ -20,14 +20,13 @@ const App = () => {
   return (
     <Router>
       <Header />
-      <NavBar />
       <Main>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/Tradicion" element={<TradicionPage />} />
-          <Route path="/Galeria" element={<GaleriaPage />} />
-          <Route path="/Novedades" element={<NovedadesPage />} />
-          <Route path="/Contacto" element={<ContactoPage />} />
+          <Route path="/tradicion" element={<TradicionPage />} />
+          <Route path="/galeria" element={<GaleriaPage />} />
+          <Route path="/novedades" element={<NovedadesPage />} />
+          <Route path="/contacto" element={<ContactoPage />} />
         </Routes>
       </Main>
       <Footer />

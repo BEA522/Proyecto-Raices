@@ -1,5 +1,5 @@
 /* header , nav , router */
-
+@import 'bootstrap/dist/css/bootstrap.min.css'; 
 /*@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rowdies:wght@300;400;700&family=Satisfy&display=swap');
 */
@@ -7,15 +7,8 @@
 font-family: "Dancing Script , serif";
 font-family: "DM Sans", sans-serif;
 */
-@import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 /*home*/
-
-.acoordion-button:not(.collapsed) {
-    background-color: rosybrown;
-    color: black;
-    font-weight: 900;
-}
 
 body {  
     font-family: Arial, sans-serif;  
@@ -40,20 +33,18 @@ p {
 
 } 
 
-
-footer {
-    background-color: #ccc;
-    color: #333;
-    clear: both;
-    padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
+.acoordion-button:not(.collapsed) {
+    background-color: rosybrown;
+    color: black;
+    font-weight: 900;
 }
 
 .holder {
     max-width: 960px;
     margin: 0 auto;
 }
+
+
 
 .rounded-logo {
     border-radius: 50%;
@@ -73,20 +64,12 @@ footer {
     width: 100px;
     height: auto;
     border: 1px solid #ddd;
-    padding: 0.5 em;
+    padding: 0.5em;
     box-sizing: border-box;
     margin-bottom: 20px;
     margin-right: 5%;
 }
 
-footer {
-    background-color: #ccc;
-    color: #333;
-    clear: both;
-    padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
-}
 
 /* contacto*/
 
@@ -158,33 +141,13 @@ footer {
 }
 
 
-footer {
-    background-color: #ccc;
-    color: #333;
-    clear: both;
-    padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
-}
-
 /* novedades*/
-
 
 style {
     font-family: "Dancing Script", serif;
 }
 
-footer {
-    background-color: #ccc;
-    color: #333;
-    clear: both;
-    padding: 3em 0;
-    margin-top: 2em;
-    text-align: center;
-}
-
 /* tradicion*/
-
 
 style {
     font-family: "Dancing Script", serif;
