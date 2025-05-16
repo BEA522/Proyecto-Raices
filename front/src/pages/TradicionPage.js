@@ -70,7 +70,7 @@ const TradicionPage = () => {
                             </div>
                         </div>
                     </div>
-                    <Link to="index.html" className="btn btn-primary">Pagina Principal </Link>
+                    <Link to="/" className="btn btn-primary">Pagina Principal </Link>
 
                 </main>
 
