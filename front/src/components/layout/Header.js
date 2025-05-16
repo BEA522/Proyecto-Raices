@@ -17,7 +17,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/novedades">Novedades</Nav.Link>
                         <Nav.Link as={Link} to="/galeria">Galeria</Nav.Link>
                         <Nav.Link as={Link} to="/contacto">Contacto</Nav.Link>
-                        <Nav.Link as="a" href="https://www.google.com.ar/?hl=es-419">Google</Nav.Link>
+                        <Nav.Link as="a" href="https://www.google.com.ar/?hl=es-419" target='_blank' rel='noopener noreferrer'>Google</Nav.Link>
                     </Nav>
                     <form className="d-flex mt-3" role="search" action="/novedades" method="get">
                         <input className="form-control me-2" type="search" placeholder="Search" name="query" aria-label="Search" />
